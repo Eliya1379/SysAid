@@ -1,0 +1,28 @@
+<suite name="Parameter test Suite" verbose="1">
+    <!-- This parameter will be passed to every test in this suite -->
+    <parameter name="platform" value="Chrome"/>
+    <parameter name="url" value="https://qaautomationtests.sysaidit.com/Login.jsp"/>
+
+    <test name="Start test">
+        <classes>
+            <class name="Tests.BaseTest"></class>
+        </classes>
+    </test>
+    <test name="Valid tests Login">
+        <classes>
+            <class name="Tests.Login.ValidTests.NavToForgetPassword"></class>
+            <class name="Tests.Login.ValidTests.navToHelpDesc"></class>
+            <class name="Tests.Login.ValidTests.ValidLogin"></class>
+        </classes>
+    </test>
+    <test name="add new record valid">
+        <classes>
+            <class name="Tests.HelpDesk.addNewRecordTest"></class>
+        </classes>
+    </test>
+    <test name="Invalid tests Login">
+        <classes>
+            <class name="Tests.Login.InvalidTests.InvalidLogin"></class>
+        </classes>
+    </test>
+</suite>
